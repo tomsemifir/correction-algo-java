@@ -3,28 +3,23 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-
-        int[] tab = new int[5];
-        int[] tab2 = {10, 15, 16};
-
-        // [ 15 , 16 , 17 ]
-        //    77   82    14
-        //  "Mage", "Guerrier", "Archer"
-
-        List<String> prenoms = new ArrayList<>(
-                Arrays.asList("toto", "titi", "tata")
-        );
-
-        for(int index = 0; index < prenoms.size(); index++) {
-            System.out.println(prenoms.get(index));
-        }
-
-        System.out.println("-----------------------------------");
-
-        // for(Type element : elemList)
-        for(String prenom : prenoms) {
-            System.out.println(prenom);
-        }
+        System.out.println(addition(10, 5 , 25 , 80, 2, 2, 1));
 
     }
+
+    /**
+     * Fonction qui calcule la somme de tous les numéros entrés en paramètre
+     * @param numeros Tableau des numéros entrés en paramètre
+     * @return somme des numéros
+     */
+    public static int addition(int... numeros) {
+        int result = 0;
+        System.out.println("Taille : " + numeros.length);
+        for(int numero : numeros) {
+            result += numero;
+        }
+        return result;
+    }
+
+
 }
