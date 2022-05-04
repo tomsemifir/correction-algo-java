@@ -9,7 +9,7 @@ public class Exo12 {
         for(int temperature : temperatures) {
             // Si la valeur absolue de la temperature est plus petite que la temperature
             // la plus proche de zéro actuelle
-            if(Math.abs(temperature) <= procheZero && temperature < 0) {
+            if(Math.abs(temperature) <= Math.abs(procheZero) && temperature < 0) {
                 // Alors définir la temperature la plus proche de zéro avec la température actuelle
                 procheZero = temperature;
             }
