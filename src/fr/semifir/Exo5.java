@@ -3,7 +3,6 @@ package fr.semifir;
 public class Exo5 {
     public static void main(String[] args) {
         double[] tabNotes = { 4.5, 8, 2, -5, 10.5, 2, 14.5, 13 };
-        //                 0  1   2   3
 
         for(int index = 0; index < tabNotes.length; index++) {
             double note = tabNotes[index];
@@ -19,7 +18,7 @@ public class Exo5 {
             } else if(note > 17 && note <= 20){
                 System.out.println("Excellent");
             } else {
-                System.out.println("La note n'est pas bonne....");
+                System.out.println("La note n'est pas comprise entre 0 et 20....");
             }
         }
     }

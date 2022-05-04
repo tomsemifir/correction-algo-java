@@ -1,10 +1,16 @@
 package fr.semifir;
 
+import java.util.Scanner;
+
 public class Exo3 {
     public static void main(String[] args) {
 
-        double prixFabrication = 10.0;
-        double prixVente = 10.0;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Saisir prix de fabrication : ");
+        double prixFabrication = scanner.nextDouble();
+        System.out.println("Saisir prix de vente : ");
+        double prixVente = scanner.nextDouble();
 
         double profit = prixVente - prixFabrication;
 

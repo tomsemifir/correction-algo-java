@@ -5,9 +5,14 @@ import java.util.Scanner;
 public class Exo4 {
     public static void main(String[] args) {
 
-        int nombre1 = 20;
-        int nombre2 = 20;
-        int nombre3 = 17;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Saisir premier nombre : ");
+        int nombre1 = scanner.nextInt();
+        System.out.println("Saisir deuxieme nombre : ");
+        int nombre2 = scanner.nextInt();
+        System.out.println("Saisir troisieme nombre : ");
+        int nombre3 = scanner.nextInt();
 
         if(nombre1 >= nombre2 && nombre1 >= nombre3) {
             System.out.println("[" + nombre1 + "," + nombre2 + "," + nombre3 + "] --> " + nombre1);

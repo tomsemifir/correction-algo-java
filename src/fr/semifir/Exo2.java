@@ -1,9 +1,15 @@
 package fr.semifir;
 
+import java.util.Scanner;
+
 public class Exo2 {
     public static void main(String[] args) {
-        int nombre1 = 12;
-        int nombre2 = 3;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Saisir premier nombre :");
+        int nombre1 = scanner.nextInt();
+        System.out.println("Saisir deuxieme nombre :");
+        int nombre2 = scanner.nextInt();
 
         int result = nombre1 + nombre2;
 
