@@ -12,6 +12,7 @@ public class Exo10 {
             String espaces = "";
             String etoiles = "";
 
+            //Compter les espaces
             for(int j=0; j < nombre-i; j++) {
                 espaces += " ";
             }
